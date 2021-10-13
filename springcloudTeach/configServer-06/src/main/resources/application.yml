@@ -1,0 +1,19 @@
+server:
+  port: 7878
+spring:
+  application:
+    name: configServer
+  cloud:
+    consul:
+      port: 8500   #将服务注册到注册中心中去
+      discovery:
+        hostname: localhost
+        service-name: ${spring.application.name}
+
+    config:  # 配置远端git仓库地址
+      server:
+        git:
+          uri: https://github.com/chou120/configServer.git
+          force-pull: true #强制拉取
+#spring.cloud.config.server.git.username=               私有仓库访问用户名
+#spring.cloud.config.server.git.password=				私有仓库访问密码

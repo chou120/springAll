@@ -1,0 +1,19 @@
+#server:
+#  port: 8089
+#  servlet:
+#    context-path: /outfile
+
+
+#Student:
+#  nickname: lisguang
+#  age: 22
+#  list2:
+#    - shassa
+#    - dhasdhas
+#    - are you ready?
+#  map2:
+#    zhangsan: zhangsan的wife
+#    lisi: lisidewifi
+#  dog:
+#    dogName: 苗光启
+#    dogWeight: 1234.8

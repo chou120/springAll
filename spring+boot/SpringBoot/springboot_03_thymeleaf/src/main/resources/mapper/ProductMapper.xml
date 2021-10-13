@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yiwobao.springboot_03_thymeleaf.dao.ProductDao">
+    <select id="getAll" resultType="Product">
+        select *
+        from t_product
+    </select>
+
+    <insert id="addProduct" parameterType="Product">
+        insert into t_product" +
+            "(pName,createDate,price,lessPrice,address,number)" +
+            "value(#{pName},#{createDate}," +
+            "#{price},#{lessPrice},#{address},#{number})
+    </insert>
+
+    <delete id="deleteByProduct" parameterType="java.lang.String">
+        delete from t_product where pName=#{pname}
+    </delete>
+    
+    <select id="getByName" parameterType="java.lang.String">
+        select * from t_ptoduct where pName=#{name};
+    </select>
+    
+    <update id="updateByProduct" parameterType="com.yiwobao.springboot_03_thymeleaf.pojo.Product">
+        update t_product
+        <set>
+            <if test="pName!='' and pName!=null">
+                pName=#{pName}
+            </if>
+            <if test="createDate!=null">
+                createDate=#{createDate}
+            </if>
+            <if test="price !=null">
+                price =#{price}
+            </if>
+            <if test="lessPrice!=null">
+                lessPrice=#{lessPrice}
+            </if>
+            <if test="address!=null">
+                address=#{address}
+            </if>
+            <if test="number!=null">
+                `number`=#{number}
+            </if>
+        </set>
+    </update>
+
+</mapper>

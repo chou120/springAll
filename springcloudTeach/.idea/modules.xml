@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConsulClient-02/ConsulClient-02.iml" filepath="$PROJECT_DIR$/ConsulClient-02/ConsulClient-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configServer-06/configServer-06.iml" filepath="$PROJECT_DIR$/configServer-06/configServer-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/erueka-server-01/erueka-server-01.iml" filepath="$PROJECT_DIR$/erueka-server-01/erueka-server-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client-01/eureka-client-01.iml" filepath="$PROJECT_DIR$/eureka-client-01/eureka-client-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/getway-05/getway-05.iml" filepath="$PROJECT_DIR$/getway-05/getway-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrixDashboard-04/hystrixDashboard-04.iml" filepath="$PROJECT_DIR$/hystrixDashboard-04/hystrixDashboard-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/products-03-7779/products-03-7779.iml" filepath="$PROJECT_DIR$/products-03-7779/products-03-7779.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudTeach.iml" filepath="$PROJECT_DIR$/springcloudTeach.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users-03-7778/users-03-7778.iml" filepath="$PROJECT_DIR$/users-03-7778/users-03-7778.iml" />
+    </modules>
+  </component>
+</project>

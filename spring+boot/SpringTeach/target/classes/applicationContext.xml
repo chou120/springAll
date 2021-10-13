@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userPojo" class="com.yiwobao.pojo.User">
+        <property name="address" value="下水道"/>
+        <property name="age" value="12"/>
+        <property name="name" value="張三"/>
+        <property name="country" value="中國"/>
+    </bean>
+
+    <!--构造器配置bean-->
+    <bean id="constructor" class="com.yiwobao.pojo.User">
+        <constructor-arg  name="name"  value="张三丰"/>
+        <constructor-arg  name="country"  value="元朝"/>
+        <!--使用类型的方式-->
+        <constructor-arg  type="java.lang.String"  value="china"/>
+        <!--使用下标的方式-->
+        <constructor-arg  index="1" value="12"/>
+    </bean>
+
+    <!--静态工厂-->
+    <bean id="staticFactory"   class="com.yiwobao.dao.SpringAction">
+        <property name="daoFactory" ref="daoFa"/>
+    </bean>
+    <bean id="daoFa"  class="com.yiwobao.dao.DaoFactory" factory-method="getStaticUserDaoImpl">
+    </bean>
+
+    <bean id="person" class="com.yiwobao.pojo.Person1">
+        <property name="name" value="大熊猫"/>
+        <property name="address" value="四川"/>
+        <property name="list">
+            <list>
+               <ref bean="userPojo"/>
+               <ref bean="userPojo2"/>
+               <ref bean="userPojo3"/>
+            </list>
+        </property>
+        <property name="set">
+            <!--因为每次bean的配置 都会产生一个新的bean,所以在此案例中不能提现出set引用bean的不重复的特性-->
+            <set>
+                <ref bean="userPojo4"/>
+                <ref bean="userPojo2"/>
+                <ref bean="userPojo3"/>
+                <ref bean="userPojo"/>
+            </set>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="9527" value-ref="userPojo"/>
+                <entry key="9528" value-ref="userPojo2"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="userPojo2" class="com.yiwobao.pojo.User">
+        <property name="address" value="下水道2"/>
+        <property name="age" value="122"/>
+        <property name="name" value="張三2"/>
+        <property name="country" value="2中國"/>
+    </bean>
+
+    <bean id="userPojo3" class="com.yiwobao.pojo.User">
+        <property name="address" value="下水道3"/>
+        <property name="age" value="123"/>
+        <property name="name" value="張三3"/>
+        <property name="country" value="中國3"/>
+    </bean>
+
+    <bean id="userPojo4" class="com.yiwobao.pojo.User">
+        <property name="address" value="下水道3"/>
+        <property name="age" value="123"/>
+        <property name="name" value="張三3"/>
+        <property name="country" value="中國3"/>
+    </bean>
+
+</beans>

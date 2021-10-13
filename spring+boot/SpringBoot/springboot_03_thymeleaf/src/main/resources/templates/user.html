@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <!--<table >
+            <thead>
+            <th>昵称</th>
+            <th>联系方式</th>
+            <th>email</th>
+            <th>地址</th>
+            <th>出生日期</th>
+
+            </thead>
+            <tbody>
+                <td th:text="${user.nick}">x</td>
+                <td th:text="${user.phone}">137xxxxxxxx</td>
+                <td th:text="${user.email}">xxx@xx.com</td>
+                <td th:text="${user.address}">北京.xxx</td>
+                <td th:text="${#dates.format(user.birthday, 'yyyy-MM-dd HH:mm:ss')}">2020-02-02 12:09:12</td>
+            </tbody>
+
+        </table>
+        <span th:text="${hello}">你好</span>-->
+
+
+        <div th:object="${user}" >
+            <p>nick: <span th:text="*{nick}">张三李四玩儿吧</span></p>
+            <p>phone: <span th:text="*{phone}" >12090812931</span></p>
+            <p>email: <span th:text="*{email}" >xxx@qq.com</span></p>
+            <p>address: <span th:text="*{address}" >北京</span></p>
+            <p>日期: <span th:text="*{#dates.format(birthday, 'yyyy-MM-dd HH:mm:ss')}" >2020-02-02 12:09:12</span></p>
+            <p th:if="${sex} == 1" >
+                <input type="radio" name="se"  th:value="女" checked="checked"/>女
+            </p>
+            <p th:if="${sex} == 2">
+                <input type="radio" name="se" th:value="男" checked="checked"/>男
+            </p>
+        </div>
+
+    <!--<table>
+        <tr th:each="user, interStat : ${userList}">
+            <td th:text="${interStat.index}"></td>
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.nick}"></td>
+            <td th:text="${user.phone}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.address}"></td>
+        </tr>
+    </table>
+-->
+
+       <!-- <div th:each="myMapVal : ${myMap}">
+            <span th:text="${myMapVal.key}"></span>
+            <span th:text="${myMapVal.value}"></span>
+            <br/>
+        </div>
+-->
+
+
+
+</body>
+</html>

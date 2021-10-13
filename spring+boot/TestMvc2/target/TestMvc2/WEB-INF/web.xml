@@ -1,0 +1,94 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/applicationContext.xml</param-value>
+  </context-param>
+
+  <!--字符编码过滤器-->
+  <filter>
+    <filter-name>characterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <!--指定转换的编码-->
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>characterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- 配置核心控制器 -->
+  <servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <!-- springmvc配置文件加载路径
+         1）默认情况下，读取WEB-INF下面的文件
+         2）可以改为加载类路径下（resources目录），加上classpath:
+     -->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <!--spring默认访问的mvc的文件-->
+      <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+    </init-param>
+    <!--
+       DispatcherServlet对象创建时间问题
+          1）默认情况下，第一次访问该Servlet的创建对象，意味着在这个时间才去加载springMVC.xml
+          2）可以改变为在项目启动时候就创建该Servlet，提高用户访问体验。
+              <load-on-startup>1</load-on-startup>
+                    数值越大，对象创建优先级越低！ （数值越低，越先创建）
+    -->
+    <load-on-startup>1</load-on-startup>
+    <!--
+    注意事项：
+        DispathcerServlet是Spring MVC提供的核心控制器，这是一个Servlet程序，该Servlet会接收所有请求
+        核心控制器会读取一个springmvc.xml配置，加载Spring MVC的核心配置
+        <url-pattern>配置*.do，代表 http请求 只拦截以.do结尾的请求，后续我们可以进行更改
+        <load-on-startup>代表在项目启动时实例化DispathcerServlet，如果没有配置，则在第一次访问Servlet时进行实例化
+    -->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern><!--springmvc的前端控制器dispatcherServlet与tomcat配置的DefaultServlet冲突-->
+  <!--拦截一切请求，除了在tomcat里面默认的配置jsp可以过滤（也就是说只能访问jsp）-->
+  </servlet-mapping>
+<!--配置可访问静态资源-->
+    <servlet-mapping>
+      <servlet-name >default </servlet-name >
+      <url-pattern >*.js</url-pattern>
+    </servlet-mapping >
+    <servlet-mapping >
+      <servlet-name >default </servlet-name >
+      <url-pattern >*.css</url-pattern>
+    </servlet-mapping >
+    <servlet-mapping >
+      <servlet-name >default </servlet-name >
+      <url-pattern >*.png</url-pattern>
+    </servlet-mapping >
+    <servlet-mapping >
+      <servlet-name >default </servlet-name >
+      <url-pattern >*.woff</url-pattern>
+    </servlet-mapping >
+    <servlet-mapping >
+      <servlet-name >default </servlet-name >
+      <url-pattern >*.ttf</url-pattern>
+    </servlet-mapping >
+    <servlet-mapping >
+    <servlet-name >default </servlet-name >
+    <url-pattern >*.jpg</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping >
+    <servlet-name >default </servlet-name >
+    <url-pattern >*.jpeg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping >
+    <servlet-name >default </servlet-name >
+    <url-pattern >*.html</url-pattern>
+  </servlet-mapping>
+</web-app>

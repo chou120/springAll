@@ -1,0 +1,32 @@
+
+
+spring:
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效
+# 修改静态资源加载路径
+  resources:
+    static-locations: classpath:/yiwobao
+server:
+  port: 8090
+#  servlet:
+#    context-path: /config/
+
+
+#Student:
+#  nickname: lisguang
+#  age: 22
+#  list2:
+#    - shassa
+#    - dhasdhas
+#    - are you ready?
+#  map2:
+#    zhangsan: zhangsan的wife
+#    lisi: lisidewifi
+#  dog:
+#    dogName: 苗光启
+#    dogWeight: 1234.8

@@ -1,0 +1,11 @@
+com\yiwobao\userApplication\UsersSpringApplication.class
+com\yiwobao\userApplication\service\ProductFallback.class
+com\yiwobao\userApplication\api\CommonResult.class
+com\yiwobao\userApplication\controller\UserController.class
+com\yiwobao\userApplication\entity\Product.class
+com\yiwobao\userApplication\api\ResultCode.class
+com\yiwobao\userApplication\controller\HystrixController.class
+com\yiwobao\userApplication\controller\OpenFeignController.class
+com\yiwobao\userApplication\client\ProductClient.class
+com\yiwobao\userApplication\config\OpenFeignConfig.class
+com\yiwobao\userApplication\config\RestTemplateConfig.class

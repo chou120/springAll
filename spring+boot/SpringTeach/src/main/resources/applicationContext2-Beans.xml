@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="man" class="com.yiwobao.pojo.Man">
+        <constructor-arg value="bianchengbang" />
+        <constructor-arg value="12" type="int" />
+    </bean>
+    <bean id="person" class="com.yiwobao.pojo.Person" autowire="no">
+        <constructor-arg ref="man" name="man"/>
+    </bean>-->
+    <!--按名称自动装配（autowire="byName"）-->
+   <!-- <bean id="man" class="com.yiwobao.pojo.Man" >
+        <constructor-arg value="bianchengbang" />
+        <constructor-arg value="12" type="int" />
+    </bean>
+    <bean id="person" class="com.yiwobao.pojo.Person" autowire="byName"/>
+-->
+
+    <!--按类型自动装配（autowire="byType"）-->
+
+    <!--<bean id="man" class="com.yiwobao.pojo.Man" >
+        <constructor-arg value="bianchengbang" />
+        <constructor-arg value="12" type="int" />
+    </bean>
+    <bean id="person" class="com.yiwobao.pojo.Person" autowire="byType"/>-->
+
+    <!--<bean id="man1" class="com.yiwobao.pojo.Man" >
+        <constructor-arg value="bianchengbang" />
+        <constructor-arg value="12" type="int" />
+    </bean>
+    <bean id="man2" class="com.yiwobao.pojo.Man" >
+        <constructor-arg value="bianchengbang" />
+        <constructor-arg value="12" type="int" />
+    </bean>-->
+
+
+    <bean id="man" class="com.yiwobao.pojo.Man" >
+        <constructor-arg value="bianchengbang" />
+        <constructor-arg value="12" type="int" />
+    </bean>
+    <bean id="person" class="com.yiwobao.pojo.Person" autowire="constructor"/>
+
+
+
+</beans>

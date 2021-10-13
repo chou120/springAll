@@ -1,0 +1,8 @@
+server:
+  port: 9999
+# 此模块是一个单独的服务 并不是微服务的一部分
+hystrix:
+  dashboard:
+    proxyStreamAllowList: '*'
+
+

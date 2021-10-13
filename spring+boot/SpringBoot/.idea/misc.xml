@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springboot_08_security" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot_08_Security_session" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot_10_exception" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot_11_plus" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot_12_plus_gen" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_01/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_02_config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_03_thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_05_swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_06_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_07_redis_Project/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_08_Security/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_08_sessionToken/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_08_security/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_09_task/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_10_exception/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_11_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_12_plus_gen/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

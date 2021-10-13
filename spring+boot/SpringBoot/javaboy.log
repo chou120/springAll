@@ -1,0 +1,4 @@
+2021-08-30 10:08:23.878 DEBUG 26712 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.yiwobao.controller.HelloController#hello()
+2021-08-30 10:08:23.909 DEBUG 26712 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-08-30 10:08:23.910 DEBUG 26712 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Hello World!"]
+2021-08-30 10:08:23.919 DEBUG 26712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

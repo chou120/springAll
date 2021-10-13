@@ -1,0 +1,11 @@
+logging:
+  level:
+    org:
+      springframework:
+        web: debug    #在程序使用web插件的时候debug起作用
+      hibernate: error #
+  file:
+    name: javaboy.log
+  logback:
+    rollingpolicy:
+      max-file-size: 1B

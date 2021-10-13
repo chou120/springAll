@@ -1,0 +1,47 @@
+[2021-08-30 10:19:05,914][main][INFO][com.yiwobao.Springboot01Application:55] Starting Springboot01Application using Java 1.8.0_131 on sanye with PID 13520 (C:\Spring\SpringBoot\springboot_01\target\classes started by edy in C:\Spring\SpringBoot)
+[2021-08-30 10:19:05,927][main][INFO][com.yiwobao.Springboot01Application:663] The following profiles are active: dev
+[2021-08-30 10:19:06,810][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+[2021-08-30 10:19:06,826][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-08-30 10:19:06,827][main][INFO][org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+[2021-08-30 10:19:06,827][main][INFO][org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.50]
+[2021-08-30 10:19:06,902][main][INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+[2021-08-30 10:19:06,903][main][INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 932 ms
+[2021-08-30 10:19:07,238][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2021-08-30 10:19:07,252][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-08-30 10:19:07,261][main][INFO][com.yiwobao.Springboot01Application:61] Started Springboot01Application in 1.888 seconds (JVM running for 4.348)
+[2021-08-30 10:19:37,998][main][INFO][com.yiwobao.Springboot01Application:55] Starting Springboot01Application using Java 1.8.0_131 on sanye with PID 26980 (C:\Spring\SpringBoot\springboot_01\target\classes started by edy in C:\Spring\SpringBoot)
+[2021-08-30 10:19:38,008][main][INFO][com.yiwobao.Springboot01Application:663] The following profiles are active: dev
+[2021-08-30 10:19:38,830][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+[2021-08-30 10:19:38,845][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-08-30 10:19:38,846][main][INFO][org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+[2021-08-30 10:19:38,846][main][INFO][org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.50]
+[2021-08-30 10:19:38,929][main][INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+[2021-08-30 10:19:38,930][main][INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 879 ms
+[2021-08-30 10:19:39,284][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2021-08-30 10:19:39,299][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-08-30 10:19:39,310][main][INFO][com.yiwobao.Springboot01Application:61] Started Springboot01Application in 1.899 seconds (JVM running for 3.993)
+[2021-08-30 10:20:10,546][main][INFO][com.yiwobao.Springboot01Application:55] Starting Springboot01Application using Java 1.8.0_131 on sanye with PID 17312 (C:\Spring\SpringBoot\springboot_01\target\classes started by edy in C:\Spring\SpringBoot)
+[2021-08-30 10:20:10,599][main][INFO][com.yiwobao.Springboot01Application:663] The following profiles are active: dev
+[2021-08-30 10:20:11,512][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+[2021-08-30 10:20:11,526][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-08-30 10:20:11,526][main][INFO][org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+[2021-08-30 10:20:11,527][main][INFO][org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.50]
+[2021-08-30 10:20:11,602][main][INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+[2021-08-30 10:20:11,603][main][INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 955 ms
+[2021-08-30 10:20:11,931][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2021-08-30 10:20:11,945][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-08-30 10:20:11,956][main][INFO][com.yiwobao.Springboot01Application:61] Started Springboot01Application in 1.943 seconds (JVM running for 4.281)
+[2021-08-30 10:20:38,549][http-nio-8080-exec-1][INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-08-30 10:20:38,550][http-nio-8080-exec-1][INFO][org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+[2021-08-30 10:20:38,551][http-nio-8080-exec-1][INFO][org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+[2021-08-30 11:12:57,441][main][INFO][com.yiwobao.Springboot01Application:55] Starting Springboot01Application using Java 1.8.0_131 on sanye with PID 19788 (C:\Spring\SpringBoot\springboot_01\target\classes started by edy in C:\Spring\SpringBoot)
+[2021-08-30 11:12:57,514][main][INFO][com.yiwobao.Springboot01Application:663] The following profiles are active: dev
+[2021-08-30 11:12:58,346][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+[2021-08-30 11:12:58,360][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2021-08-30 11:12:58,361][main][INFO][org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+[2021-08-30 11:12:58,361][main][INFO][org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.50]
+[2021-08-30 11:12:58,436][main][INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+[2021-08-30 11:12:58,436][main][INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 864 ms
+[2021-08-30 11:12:58,724][main][INFO][org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2021-08-30 11:12:58,740][main][INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+[2021-08-30 11:12:58,751][main][INFO][com.yiwobao.Springboot01Application:61] Started Springboot01Application in 1.898 seconds (JVM running for 3.698)

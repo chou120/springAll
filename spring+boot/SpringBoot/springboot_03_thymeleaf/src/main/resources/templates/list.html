@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>显示所有的产品</title>
+</head>
+<body>
+<table style="border: darksalmon 1px solid;width: 700px;height: 500px;">
+    <thead>
+        <tr>
+            <td>产品名称</td>
+            <td>生产时间</td>
+            <td>价格</td>
+            <td>折扣</td>
+            <td>产地</td>
+            <td>库存</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="product,productStat : ${list}">
+            <td th:text="${product.PName}">旺旺辣条</td>
+            <td th:text="${#dates.format(product.createDate,'yyyy-MM-dd HH:mm:ss')}">2020-02-02 12:12:12</td>
+            <td th:text="${product.price}">20</td>
+            <td th:text="${product.lessPrice}+折">5折</td>
+            <td th:text="${product.address}">湖南娄底</td>
+            <td th:text="${product.number}">10000</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>

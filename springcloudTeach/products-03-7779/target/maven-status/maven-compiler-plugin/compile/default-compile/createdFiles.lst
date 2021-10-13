@@ -1,0 +1,9 @@
+com\yiwobao\productsApplication\controller\HystrixProductController.class
+com\yiwobao\productsApplication\ProductsApplication.class
+com\yiwobao\productsApplication\api\ResultCode.class
+com\yiwobao\productsApplication\service\ProductServiceImpl.class
+com\yiwobao\productsApplication\service\ProductServiceImpl$1.class
+com\yiwobao\productsApplication\service\ProductService.class
+com\yiwobao\productsApplication\entity\Product.class
+com\yiwobao\productsApplication\controller\ProductController.class
+com\yiwobao\productsApplication\api\CommonResult.class

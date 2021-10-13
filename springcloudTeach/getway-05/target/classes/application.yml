@@ -1,0 +1,47 @@
+server:
+  port: 8989
+spring:
+  application:
+    name: getway
+#将网关服务注册到consul注册中心
+  cloud:
+    consul:
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+    gateway:
+      routes:
+        - id: user_routes      #路由服务的唯一标识 记住 是全局唯一
+          #uri: http://localhost:7778/  #路由服务的地址
+          uri: lb://usersClient
+          predicates:
+            - Path=/user/**    # 指定路由规则
+ # 当前端在访问 8989端口  后面如果加了/user/** 就表示访问的是用户模块  gateway自动到相应的服务
+        - id: product_routes
+          #uri: http://localhost:7779/
+          uri: lb://productClient
+          predicates:
+            - Path=/product/**
+          #  @GetMapping("/product/getByName")  /product/** 要对应
+           # - Cookie=username,sanye
+           # - Cookie=username,[A-Za-z0-9]+
+          #filters:  使用全局过滤器 关闭配置文件中的过滤器
+            #这个过滤器其实就是和我们之前的拦截器一样  访问会给product下面的所有的都会加上 请求参数productId=12
+            #- AddRequestParameter=productId,12
+            #- AddResponseHeader=productId,12
+
+      discovery: #开启负载均衡
+        locator:
+          enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+productClient: #注册中心的名字
+  ribbon:
+    listOfServers: localhost:7779,localhost:7780,localhost:7781
+    #设置负载均衡的策略  ( 随机)
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

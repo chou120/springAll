@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="users-03-7778" />
+        <module name="configServer-06" />
+        <module name="products-03-7779" />
+        <module name="hystrixDashboard-04" />
+        <module name="eureka-client-01" />
+        <module name="getway-05" />
+        <module name="ConsulClient-02" />
+        <module name="erueka-server-01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="configServer-06" target="8" />
+      <module name="ConsulClient-02" target="8" />
+      <module name="erueka-server-01" target="8" />
+      <module name="eureka-client-01" target="8" />
+      <module name="getway-05" target="8" />
+      <module name="hystrixDashboard-04" target="8" />
+      <module name="products-03-7779" target="8" />
+      <module name="springcloudTeach" target="1.5" />
+      <module name="users-03-7778" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="erueka-server-01" options="" />
+      <module name="springcloudTeach" options="-parameters" />
+    </option>
+  </component>
+</project>
